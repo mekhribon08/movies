@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="movie">
+      <h1 class="movie__text">Movies</h1>
+      <form class="movie__form" data-movie-form>
+        <input
+          class="movie__input"
+          placeholder="Search Movie"
+          type="text"
+          name="name"
+        />
+        <button class="movie__btn" type="submit">
+          <img src="./picture/search-icon.svg" alt="search-icon" />
+        </button>
+      </form>
+    </div>
+
+    <ul data-movie-list></ul>
+
+    <div class="my-modal" id="test-modal" data-modal>
+      <div class="my-modal__content" data-model-content>
+        <button class="btn btn-close" data-modal-close></button>
+        <div data-movie-about>
+          <h1 data-title>Guardians of the Galaxy Vol</h1>
+          <h4 data-year>2017</h4>
+          <h4 data-rated>PG-13</h4>
+          <h4 data-released>05 May 2017</h4>
+          <h4 data-runtime>136 min</h4>
+          <h4 data-genre>Action, Adventure, Comedy</h4>
+          <h4 data-director>James Gunn</h4>
+          <h4 data-metascore>"Metascore":"67"</h4>
+          <h4 data-imdbrating>imdbRating":"7.6"</h4>
+          <h4 data-type>Type":"movie</h4>
+          <h4 data-id>imdbID":"tt3896198"</h4>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

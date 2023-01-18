@@ -71,8 +71,8 @@ function onModalCloseClick(evt) {
   el.parentElement.parentElement.classList.remove("show");
 }
 
-function createDiv(movie) {
-  elDiv.querySelector("[data-title]").textContent = movie.Title;
+// function createDiv(movie) {
+//   elDiv.querySelector("[data-title]").textContent = movie.Title;
 
-  return elDiv;
-}
+//   return elDiv;
+// }

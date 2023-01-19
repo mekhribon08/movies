@@ -30,6 +30,12 @@ body {
   padding-left: 35px;
 }
 
+@media (max-width: 800px) {
+  .movie__input {
+    max-width: 400px;
+  }
+}
+
 .movie__btn {
   cursor: pointer;
   width: 85px;

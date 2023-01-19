@@ -15,7 +15,7 @@ elForm.addEventListener("submit", (evt) => {
   const name = formData.get("name");
 });
 
-searchMovies(query);
+searchMovies(name);
 
 async function searchMovies(query) {
   const res = await fetch(`${API_URL}&s=${query}`);

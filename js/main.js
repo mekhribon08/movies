@@ -34,6 +34,8 @@ function renderMovie(movies) {
   >
     :
   </button><div><h6>${movie.Title}</h6></div></li>`;
+
+    elList.append(createMovie(movie));
   });
 
   elList.innerHTML = html;
@@ -71,8 +73,16 @@ function onModalCloseClick(evt) {
   el.parentElement.parentElement.classList.remove("show");
 }
 
-// function createDiv(movie) {
-//   elDiv.querySelector("[data-title]").textContent = movie.Title;
-
-//   return elDiv;
-// }
+function createMovie(movie) {
+  elDiv.querySelector("[data-title]").textContent = movie.Title;
+  elDiv.querySelector("[data-year]").textContent = movie.Year;
+  elDiv.querySelector("[data-rated]").textContent = movie.Rated;
+  elDiv.querySelector("[data-released]").textContent = movie.Released;
+  elDiv.querySelector("[data-runtime]").textContent = movie.Runtime;
+  elDiv.querySelector("[data-genre]").textContent = movie.Genre;
+  elDiv.querySelector("[data-director]").textContent = movie.Director;
+  elDiv.querySelector("[data-metascore]").textContent = movie.Metascore;
+  elDiv.querySelector("[data-imdbrating]").textContent = movie.imdbrating;
+  elDiv.querySelector("[data-type]").textContent = movie.Type;
+  elDiv.querySelector("[data-id]").textContent = movie.imdbID;
+}

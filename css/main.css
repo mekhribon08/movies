@@ -93,8 +93,8 @@ body {
 }
 
 .btn-close {
-  display: flex;
-  justify-content: flex-end;
+  margin-left: 398px;
+  margin-top: -50px;
 }
 
 .el-btn {

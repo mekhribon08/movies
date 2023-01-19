@@ -92,14 +92,14 @@ body {
 }
 
 .my-modal__content {
-  max-width: 500px;
+  max-width: 600px;
   padding: 50px;
   background-color: #fff;
   border-radius: 12px;
 }
 
 .btn-close {
-  margin-left: 398px;
+  margin-left: 490px;
   margin-top: -50px;
 }
 

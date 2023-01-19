@@ -30,10 +30,7 @@ function renderMovie(movies) {
     html += `<li class="movie__list-li"><img class="movie__img" width="180" src="${movie.Poster}"  alt="${movie.Title}"/> <button
     data-modal-open="#test-modal"
     type="button"
-    class="btn btn-light el-btn"
-  >
-    :
-  </button><div><h6>${movie.Title}</h6></div></li>`;
+    class="btn btn-light el-btn"> :</button><div><h6>${movie.Title}</h6></div></li>`;
 
     elList.append(createMovie(movie));
   });

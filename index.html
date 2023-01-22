@@ -24,6 +24,18 @@
           type="text"
           name="name"
         />
+        <input
+          type="number"
+          name="year"
+          class="movie__input-year"
+          placeholder="Year"
+        />
+        <select class="movie__select" name="type">
+          <option>Movie Type</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
         <button class="movie__btn" type="submit">
           <img src="./picture/search-icon.svg" alt="search-icon" />
         </button>
@@ -32,9 +44,23 @@
 
     <ul data-movie-list></ul>
 
+    <nav
+      aria-label="Movie pagination"
+      class="d-flex justify-content-center my-3"
+    >
+      <ul data-movie-pagination class="pagination"></ul>
+    </nav>
+
     <div class="my-modal" id="test-modal" data-modal>
       <div class="my-modal__content" data-model-content>
         <button class="btn btn-close" data-modal-close></button>
+        <div
+          class="spinner-border text-dark d-none my-modal__spinner"
+          data-modal-spinner
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
         <div data-movie-about>
           <h1 data-title></h1>
           <h4 data-year></h4>

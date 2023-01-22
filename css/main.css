@@ -20,10 +20,27 @@ body {
   margin-bottom: 50px;
 }
 
-.movie__input {
-  font-family: "Rye", cursive;
+.movie__select {
+  width: 200px;
   outline: none;
-  width: 750px;
+  padding: 18px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 35px;
+}
+
+.movie__input-year {
+  width: 200px;
+  outline: none;
+  padding: 18px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 35px;
+}
+
+.movie__input {
+  outline: none;
+  width: 450px;
   padding: 20px;
   border-radius: 20px;
   font-size: 20px;
@@ -37,9 +54,8 @@ body {
 }
 
 .movie__btn {
-  cursor: pointer;
-  width: 85px;
-  padding: 10px;
+  width: 110px;
+  padding: 12px;
   margin-left: 8px;
   border-radius: 10px 8px;
   box-shadow: 0px 4px 10px grey;
@@ -72,6 +88,8 @@ body {
 
 .movie__img {
   border-radius: 0 40px 0 40px;
+  height: 250px;
+  object-fit: contain;
 }
 
 .my-modal {
@@ -84,6 +102,15 @@ body {
   z-index: 100;
   background: rgba(24, 22, 22, 0.1);
   backdrop-filter: blur(5px);
+  display: none;
+}
+
+.my-modal__spinner {
+  display: block;
+  margin: 0 auto;
+}
+
+.my-modal__spinner:not(.d-none) + div {
   display: none;
 }
 

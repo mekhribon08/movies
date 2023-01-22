@@ -147,17 +147,27 @@ async function filModal(movieId, elModalSpinner) {
     elModalSpinner.classList.remove("d-none");
     const movie = await getMovie(movieId);
 
-    elDiv.querySelector("[data-title]").textContent = movie.Title;
-    elDiv.querySelector("[data-year]").textContent = movie.Year;
-    elDiv.querySelector("[data-rated]").textContent = movie.Rated;
-    elDiv.querySelector("[data-released]").textContent = movie.Released;
-    elDiv.querySelector("[data-runtime]").textContent = movie.Runtime;
-    elDiv.querySelector("[data-genre]").textContent = movie.Genre;
-    elDiv.querySelector("[data-director]").textContent = movie.Director;
-    elDiv.querySelector("[data-metascore]").textContent = movie.Metascore;
-    elDiv.querySelector("[data-imdbrating]").textContent = movie.imdbrating;
-    elDiv.querySelector("[data-type]").textContent = movie.Type;
-    elDiv.querySelector("[data-id]").textContent = movie.imdbID;
+    elDiv.querySelector("[data-title]").textContent = `Name: ${movie.Title}`;
+    elDiv.querySelector("[data-year]").textContent = `Year: ${movie.Year}`;
+    elDiv.querySelector("[data-rated]").textContent = `Rated: ${movie.Rated}`;
+    elDiv.querySelector(
+      "[data-released]"
+    ).textContent = `Released: ${movie.Released}`;
+    elDiv.querySelector(
+      "[data-runtime]"
+    ).textContent = `Runtime: ${movie.Runtime}`;
+    elDiv.querySelector("[data-genre]").textContent = `Genre: ${movie.Genre}`;
+    elDiv.querySelector(
+      "[data-director]"
+    ).textContent = `Director: ${movie.Director}`;
+    elDiv.querySelector(
+      "[data-metascore]"
+    ).textContent = `Metascore: ${movie.Metascore}`;
+    elDiv.querySelector(
+      "[data-imdbrating]"
+    ).textContent = `imdbrating: ${movie.imdbrating}`;
+    elDiv.querySelector("[data-type]").textContent = `Type: ${movie.Type}`;
+    elDiv.querySelector("[data-id]").textContent = `imdbID: ${movie.imdbID}`;
   } catch (error) {
     alert(error);
   } finally {

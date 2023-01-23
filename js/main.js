@@ -23,7 +23,7 @@ elForm.addEventListener("submit", (evt) => {
 async function searchMovies(query, year, type, page = 1) {
   elList.innerHTML = `<img src="./picture/loading-white.svg" alt="loading..">`;
   const res = await fetch(
-    `${API_URL}&s=${query}&y=${year}&=type${type} &page=${page}`
+    `${API_URL}&s=${query}&y=${year}&type=${type} &page=${page}`
   );
   const searchResult = await res.json();
 
@@ -36,8 +36,8 @@ async function searchMovies(query, year, type, page = 1) {
   renderPagination(
     Math.ceil(+searchResult.totalResults / 10),
     query,
-    year,
-    type,
+    // year,
+    // type,
     page
   );
 }

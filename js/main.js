@@ -174,3 +174,11 @@ async function filModal(movieId, elModalSpinner) {
     elModalSpinner.classList.add("d-none");
   }
 }
+
+var slider = tns({
+  container: ".my-slider",
+  items: 3,
+  slideBy: "page",
+  autoplay: true,
+  speed: 400,
+});
